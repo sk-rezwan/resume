@@ -27,3 +27,5 @@ Route::resource('user-detail', 'UserDetailController')->middleware('auth');
 Route::resource('education', 'EducationController')->middleware('auth');
 Route::resource('experience', 'ExperienceController')->middleware('auth');
 Route::resource('skills', 'SkillController')->middleware('auth');
+
+Route::get('resume', 'ResumeController@index')->name('resume.index')->middleware('auth');
